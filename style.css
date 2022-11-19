@@ -1,0 +1,67 @@
+:root {
+  --first-color: #272a3a;
+  --first-color-light: #8a8eaa;
+  --first-color-lighten: #f8f8fc;
+
+  --body-font: "Ubuntu", sans-serif;
+  --normal-font-size: 1rem;
+  --smaller-font-size: 0.813rem;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--body-font);
+  background-color: var(--first-color-lighten);
+}
+
+h1 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.drop,
+.drop_container {
+  display: grid;
+}
+
+.drop {
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.drop_container {
+  row-gap: 1rem;
+  padding: 2rem;
+  box-shadow: 4px 4px 16px #e1e1e1;
+}
+
+.drop_img {
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+  margin-right: 1rem;
+}
+
+.sortable-chosen {
+  box-shadow: 8px 8px 32px #e1e1e1;
+}
+
+.sortable-drag {
+  opacity: 0;
+}
